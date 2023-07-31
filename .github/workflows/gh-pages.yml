@@ -15,10 +15,8 @@ jobs:
       with:
         path: dist/
       
-    - name: Copy content into dist/
-      run: |
-            ls -al
-            ls ..
+    - name: Check content of dist/
+      run: ls dist
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
