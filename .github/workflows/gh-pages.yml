@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-      path: dist/
+      with:
+        path: dist/
       
     - name: Copy content into dist/
       run: |
