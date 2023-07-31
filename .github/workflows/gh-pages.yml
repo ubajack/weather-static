@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main # Modifier si votre branche principale s'appelle autrement
+      - main
 
 jobs:
   build-deploy:
