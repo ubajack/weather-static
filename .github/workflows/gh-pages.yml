@@ -12,12 +12,9 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-      
-    - name: Check token
-      run: echo "Secret ${{ secrets.TOKEN }}"
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.TOKEN }}
-        publish_dir: ./dist # Modifier si votre dossier de sortie est différent
+        publish_dir: /
