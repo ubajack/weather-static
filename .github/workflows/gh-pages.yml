@@ -6,7 +6,7 @@ on:
       - main # Modifier si votre branche principale s'appelle autrement
 
 jobs:
-  build:
+  build&deploy:
     runs-on: ubuntu-latest
 
     steps:
